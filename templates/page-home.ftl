@@ -62,8 +62,15 @@
             </section> <!-- #search-home -->
         
         </section> <!-- #intro -->
-        
-        <@widget name="login" />
+
+        <section id="sidebar">
+
+          <@widget name="login" />
+
+          <!-- RSS Feed -->
+          <#include "rssFeed.ftl">
+
+        </section> <!-- #sidebar -->
         
         <!-- List of research classes: e.g., articles, books, collections, conference papers -->
         <@lh.researchClasses />
@@ -85,6 +92,7 @@
         <#include "footer.ftl">
         <#-- builds a json object that is used by js to render the academic departments section -->
         <@lh.listAcademicDepartments />
+        
     <script>       
         var i18nStrings = {
             researcherString: '${i18n().researcher}',

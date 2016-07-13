@@ -1,9 +1,12 @@
 #rssreader h2
 {
-    font-size: 1.25em;
+    font-size: 22px;
     color: #2485ae;
-    font-weight: normal;
+    padding-left: 15px;
+    padding-top: 18px;
+    border-bottom: none;
 }
+
 #rssreader
 {
     float: right;
@@ -14,8 +17,17 @@
     margin-bottom: 30px;
     overflow: hidden;
     margin-top: 20px;
+    font-size: 14px;
+}
+
+#rssreader #pubDate {
+    font-size: 12px;
+}
+
+#rssreader #moreNews {
+    margin-top: 14px;
 }
 
 body.loggedIn #intro {
-  width: 570px;
+    width: 570px;
 }

@@ -41,5 +41,5 @@ google.setOnLoadCallback(initialize);
 </script>
 
 <div id="feed"></div>
-<div><a href="http://news.temple.edu/topics/research">More at Temple News</a></div>
+<div id="moreNews"><a href="http://news.temple.edu/topics/research">More at Temple Now...</a></div>
 </section>

@@ -68,7 +68,7 @@
           <@widget name="login" />
 
           <!-- RSS Feed -->
-          <#include "rssFeed.ftl">
+          <#include "rssReader.ftl">
 
         </section> <!-- #sidebar -->
         

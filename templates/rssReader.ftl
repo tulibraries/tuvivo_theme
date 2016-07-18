@@ -25,6 +25,7 @@ function initialize() {
         var content = document.createTextNode(entry.title);
         var pubDate = document.createTextNode(d.toDateString());
         div.appendChild(pubDate);
+        div.setAttribute('id', 'pubDate');
         a.title = entry.title;
         a.href = entry.link;
         a.appendChild(content);

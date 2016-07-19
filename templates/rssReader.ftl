@@ -10,34 +10,55 @@
 
 google.load("feeds", "1");
 
-function initialize() {
-  var feed = new google.feeds.Feed("http://news.temple.edu/rss/news/topics/research");
-  feed.load(function(result) {
-    if (!result.error) {
-      var container = document.getElementById("feed");
-      var ul = document.createElement("ul");
-      for (var i = 0; i < result.feed.entries.length; i++) {
-        var entry = result.feed.entries[i];
-        var li = document.createElement("li");
-        var d = new Date(entry.publishedDate);
-        var div = document.createElement("div");
-        var a = document.createElement("a");
-        var content = document.createTextNode(entry.title);
-        var pubDate = document.createTextNode(d.toDateString());
-        div.appendChild(pubDate);
-        div.setAttribute('id', 'pubDate');
-        a.title = entry.title;
-        a.href = entry.link;
-        a.appendChild(content);
-        li.appendChild(a);
-        li.appendChild(div);
-        ul.appendChild(li);
-      }
-      container.appendChild(ul);
+    function initialize() {
+      var feed = new google.feeds.Feed("http://news.temple.edu/rss/news/topics/research");
+      feed.setResultFormat(google.feeds.Feed.MIXED_FORMAT);
+      feed.load(function(result) {
+        if (!result.error) {
+          var container = document.getElementById("feed");
+          var feedDiv = document.createElement("div");
+          feedDiv.setAttribute('class', "rssFeed");
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var itemDiv = document.createElement("div");
+            itemDiv.setAttribute('class', "rssItem");
+            var entry = result.feed.entries[i];
+            var content = document.createTextNode(entry.title);
+          
+            var img = document.createElement("img");
+            var imageUrl = entry.xmlNode.getElementsByTagName("enclosure")[0].getAttribute("url");
+            img.setAttribute('src', imageUrl);
+            img.setAttribute('class', "rssImage");
+            
+            var imageDiv = document.createElement("div");
+            imageDiv.setAttribute("class", "rssItemThumbnail");
+            imageDiv.appendChild(img);
+            
+            var d = new Date(entry.publishedDate);
+            var pubDate = document.createTextNode(d.toDateString());
+            
+            var divPubDate= document.createElement("div");
+            divPubDate.setAttribute('class', 'pubDate');
+            divPubDate.appendChild(pubDate);
+            
+            var a = document.createElement("a");
+            a.title = entry.title;
+            a.href = entry.link;
+            a.appendChild(content);
+            
+            var itemContentDiv = document.createElement("div");
+            itemContentDiv.setAttribute("class", "rssItemContent");
+            itemContentDiv.appendChild(a);
+            itemContentDiv.appendChild(divPubDate);
+            
+            itemDiv.appendChild(imageDiv);
+            itemDiv.appendChild(itemContentDiv);
+            feedDiv.appendChild(itemDiv);
+          }
+          container.appendChild(feedDiv);
+        }
+      });
     }
-  });
-}
-google.setOnLoadCallback(initialize);
+    google.setOnLoadCallback(initialize);
 
 </script>
 

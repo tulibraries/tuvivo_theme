@@ -29,9 +29,14 @@ google.load("feeds", "1");
             img.setAttribute('src', imageUrl);
             img.setAttribute('class', "rssImage");
             
+            var imageLink = document.createElement("a");
+            imageLink.title = entry.title;
+            imageLink.href = entry.link;
+            imageLink.appendChild(img);
+
             var imageDiv = document.createElement("div");
             imageDiv.setAttribute("class", "rssItemThumbnail");
-            imageDiv.appendChild(img);
+            imageDiv.appendChild(imageLink);
             
             var d = new Date(entry.publishedDate);
             var pubDate = document.createTextNode(d.toDateString());
@@ -40,14 +45,14 @@ google.load("feeds", "1");
             divPubDate.setAttribute('class', 'pubDate');
             divPubDate.appendChild(pubDate);
             
-            var a = document.createElement("a");
-            a.title = entry.title;
-            a.href = entry.link;
-            a.appendChild(content);
+            var contentLink = document.createElement("a");
+            contentLink.title = entry.title;
+            contentLink.href = entry.link;
+            contentLink.appendChild(content);
             
             var itemContentDiv = document.createElement("div");
             itemContentDiv.setAttribute("class", "rssItemContent");
-            itemContentDiv.appendChild(a);
+            itemContentDiv.appendChild(contentLink);
             itemContentDiv.appendChild(divPubDate);
             
             itemDiv.appendChild(imageDiv);

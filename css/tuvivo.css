@@ -1401,14 +1401,14 @@ ul#individual-tools {
     color: #5f6464;
 }
 ul.individual-urls {
-    list-style: url(../../../images/individual/arrow-green.gif);
+    list-style: url(../images/arrow-green.gif);
 }
 ul.individual-urls li {
     font-size: .875em;
     line-height: 1.6em;
 }
 ul.individual-urls-people {
-    list-style: url(../../../images/individual/arrow-grey.gif);
+    list-style: url(../images/arrow-grey.gif);
 }
 /* INDIVIDUAL RIGHT CONTENT ------>  */
 #individual-info,
@@ -1436,7 +1436,7 @@ h3.internal-auth {
 }
 ul#individual-personInPosition {
     font-size: 1em;
-    list-style: url("../../../images/individual/arrow-green.gif");
+    list-style: url("../images/arrow-green.gif");
 }
 ul#individual-personInPosition li {
     line-height: 1.8em;
@@ -1489,7 +1489,7 @@ img.co-author {
     background: #f1f2ee;
 }
 #property-group-menu li {
-    background: url(../../../images/individual/separator-property-group-nav.jpg) right 10px no-repeat;
+    background: url(../images/separator-property-group-nav.jpg) right 10px no-repeat;
 }
 #property-group-menu a:hover {
     color: #002b44;

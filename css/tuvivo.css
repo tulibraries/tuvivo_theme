@@ -861,10 +861,10 @@ ul#classes-in-classgroup a.selected,
 ul#vgraph-classes a:hover,
 ul#vgraph-classes a.selected {
     background: url(../images/arrow.gif) 0 10px no-repeat;
-    color: #2ea0cf;
+    color: #951936;
 }
 svg text:hover {
-    color: #2EA0CF;
+    color: #951936;
 }
 p.view-all {
     clear: both;
@@ -1196,7 +1196,7 @@ ul#individual-tools-people li a {
 ul#find-filters a:hover,
 ul#find-filters a.selected {
     background: url(../images/arrow.gif) 0 6px no-repeat;
-    color: #2ea0cf;
+    color: #951936;
 }
 /* RESEARCHERS ------>  */
 #researchers {
@@ -1262,7 +1262,7 @@ ul#vgraph-classes li {
 ul#browse-classes a:hover,
 ul#browse-classes a.selected {
     background: url(../images/arrow.gif) 4px 5px no-repeat;
-    color: #2ea0cf;
+    color: #951936;
 }
 ul#browse-classes .count-classes {    
     font-size: 12px; 
@@ -1274,7 +1274,7 @@ ul#alpha-browse-individuals {
 ul#alpha-browse-individuals a:hover,
 ul#alpha-browse-individuals a.selected {
     background: url(../images/arrowSmall.gif) -3px 7px no-repeat;
-    color: #2ea0cf;
+    color: #951936;
 }
 ul#alpha-browse-individuals .count-classes,
 ul#vgraph-classes .count-classes {
@@ -1377,7 +1377,7 @@ h1.fn .display-title {
     border-left: 1px solid #a6b1b0;
 }
 ul#individual-tools {
-    color: #8AA149;
+    color: #d62832;
 }
 h2#webpage {
     font-weight: bold;
@@ -1391,7 +1391,7 @@ img.individual-photo {
     display: block;
 }
 ul#individual-tools {
-    color: #8AA149
+    color: #d62832
 }
 #share-contact a.email,
 #share-contact a.tel,
@@ -1510,7 +1510,7 @@ article.property {
 article.property h3 {
     background: #fafaf9;
     font-size: 1.063em;
-    color: #8aa149;
+    color: #d62832;
 }
 article.property ul.property-list li.subclass h3 {
     font-size: 1.063em;

@@ -30,4 +30,4 @@
 an individual profile page. -->
 ${headContent!}
 
-<link rel="shortcut icon" type="image/x-icon" href="${urls.base}/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="/vivo/themes/tuvivo/images/favicon.ico">

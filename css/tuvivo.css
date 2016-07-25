@@ -1726,3 +1726,10 @@ span.subclassExpandMinus {
     background:url(../images/green_minus_sign.gif) right center no-repeat;
     min-height:18px;
 }
+
+/* Temple specific overrides */
+
+li.nonSelectedGroupTab {
+    background-color: #dc8898;
+    border-color: #dc8898;
+}

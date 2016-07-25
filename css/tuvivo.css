@@ -1734,3 +1734,7 @@ li.nonSelectedGroupTab {
     border-color: #dc8898;
     color: white;
 }
+
+#main-science-areas-table-footer, #download-unlocated-journal-info {
+    background-color: #951936;
+}

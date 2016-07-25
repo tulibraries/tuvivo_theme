@@ -1067,12 +1067,12 @@ ul#individual-facultyMemberships li:last-child {
 #footer-nav a:hover,
 a.terms,
 a.powered-by-vivo {
-    color: #09C;
+    color: #951936;
     text-decoration: none;
 }
 a.terms:hover,
 a.powered-by-vivo:hover {
-    color: #4e5051;
+    color: #dc8898;
     text-decoration: none;
 }
 p {

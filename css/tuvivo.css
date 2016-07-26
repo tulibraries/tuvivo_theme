@@ -27,7 +27,8 @@ body {
     margin: 0 auto;
 }
 body {
-   background: #f3f3f0 url(../images/header-background.png) center 0 no-repeat; 
+   /* background: #f3f3f0 url(../images/header-background.png) center 0 no-repeat; */
+   background-color: #a41e35;
 }
 a {
     color: #a41e35;

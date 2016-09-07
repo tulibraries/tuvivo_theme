@@ -53,7 +53,8 @@
 				</#if>
             </span>
         </div>
-        <#include "individual-contactInfo.ftl">  
+        <!-- Remove contactInfo from side bar.  It will show up in the individual-property-group-tabs -->
+        <!-- #include "individual-contactInfo.ftl" -->  
                 
         <!-- Websites -->
         <#include "individual-webpage.ftl">

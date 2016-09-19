@@ -22,6 +22,18 @@
 #rssreader .rssItem {
     padding-top: 10px;
     line-height: 18px;
+    width: 316px;
+    float: left;
+}
+
+#rssreader .rssItemThumbnail {
+    width: 102px;
+    float: left;
+}
+
+#rssreader .rssItemContent {
+    width: 214px;
+    float: right;
 }
 
 #rssreader .pubDate {
@@ -33,7 +45,6 @@
 }
 
 #rssreader img {
-    float: left;
     vertical-align: top;
     height: 48px;
     padding-right: 5px;
